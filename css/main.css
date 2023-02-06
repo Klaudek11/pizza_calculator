@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+:root {
+  background-color: #ebe6e6;
+  font-size: 10px;
+  font-family: "Libre Franklin", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+body h1 {
+  text-transform: uppercase;
+  font-size: 8rem;
+  margin: 2rem;
+  padding: 0;
+}
+body div.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 1800px;
+  flex-grow: 1;
+}
+body div.wrapper main {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+}
+body div.wrapper main div.first-pizza,
+body div.wrapper main div.second-pizza {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 45%;
+  height: 100%;
+  background-color: #e5e5e3;
+  border: #141010 2px solid;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+body div.wrapper main div.first-pizza div.img,
+body div.wrapper main div.second-pizza div.img {
+  flex-basis: 30%;
+}
+body div.wrapper main div.first-pizza div.title,
+body div.wrapper main div.second-pizza div.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #141010;
+  text-align: center;
+}
+body div.wrapper main div.first-pizza div.title p,
+body div.wrapper main div.second-pizza div.title p {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #e5e5e3;
+  width: 100%;
+}
+body div.wrapper main div.first-pizza div.calc,
+body div.wrapper main div.second-pizza div.calc {
+  flex-grow: 1;
+  background-color: red;
+  width: 100%;
+}
+body div.result {
+  width: 100%;
+  flex-basis: 15%;
+}
+body footer {
+  font-size: 3rem;
+  text-align: center;
+  color: #e5e5e3;
+  padding: 1rem;
+  width: 100%;
+  background-color: #141010;
+}/*# sourceMappingURL=main.css.map */
