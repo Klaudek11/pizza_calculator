@@ -1,0 +1,24 @@
+$background: #ebe6e6;
+$white: #e5e5e3;
+$black: #141010;
+$grey: #291f1f;
+$font-size: 10px;
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+:root {
+    background-color: $background;
+    font-size: $font-size;
+    font-family: 'Libre Franklin', sans-serif;
+    margin: 0;
+    padding: 0;
+}
