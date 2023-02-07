@@ -17,11 +17,40 @@ body {
   align-items: center;
   height: 100vh;
 }
-body h1 {
-  text-transform: uppercase;
-  font-size: 8rem;
-  margin: 2rem;
-  padding: 0;
+body header {
+  background-image: url(../img/pexels-sean-m-166451.jpg);
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0px 2px 5px #141010;
+  margin-bottom: 3rem;
+}
+body header div.header-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgba(30, 30, 30, 0.45);
+  height: 100%;
+  margin: 0;
+  color: #e5e5e3;
+}
+body header div.header-wrapper div.header-text {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  letter-spacing: 4px;
+  margin: 0 2rem;
+}
+body header div.header-wrapper div.header-text h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+body header div.header-wrapper div.header-text h2 {
+  font-size: 2rem;
+  margin: 0;
+}
+body header div.header-wrapper span {
+  font-size: 4.5rem;
 }
 body div.wrapper {
   display: flex;
@@ -34,8 +63,8 @@ body div.wrapper {
 }
 body div.wrapper main {
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: flex-start;
   width: 100%;
   height: 100%;
 }
@@ -43,44 +72,97 @@ body div.wrapper main div.first-pizza,
 body div.wrapper main div.second-pizza {
   display: flex;
   flex-direction: column;
-  flex-basis: 45%;
-  height: 100%;
-  background-color: #e5e5e3;
-  border: #141010 2px solid;
-  border-radius: 2rem;
+  flex-basis: 40%;
+  max-width: 50rem;
   overflow: hidden;
-}
-body div.wrapper main div.first-pizza div.img,
-body div.wrapper main div.second-pizza div.img {
-  flex-basis: 30%;
+  background-color: #e5e5e3;
+  border: #5C0502 0.3rem solid;
+  border-radius: 2rem;
+  margin: 2rem;
 }
 body div.wrapper main div.first-pizza div.title,
 body div.wrapper main div.second-pizza div.title {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #141010;
+  flex-direction: column;
+  background-color: #5C0502;
   text-align: center;
+  font-size: 3rem;
+  color: #e5e5e3;
+}
+body div.wrapper main div.first-pizza div.title i,
+body div.wrapper main div.second-pizza div.title i {
+  margin: 1rem 0.5rem 0 0.5rem;
 }
 body div.wrapper main div.first-pizza div.title p,
 body div.wrapper main div.second-pizza div.title p {
-  font-size: 4rem;
-  text-transform: uppercase;
-  color: #e5e5e3;
   width: 100%;
+  margin: 1rem 0;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 body div.wrapper main div.first-pizza div.calc,
 body div.wrapper main div.second-pizza div.calc {
   flex-grow: 1;
-  background-color: red;
   width: 100%;
+  background-color: #E5D2C3;
+}
+body div.wrapper main div.first-pizza div.calc form,
+body div.wrapper main div.second-pizza div.calc form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%;
+}
+body div.wrapper main div.first-pizza div.calc form div,
+body div.wrapper main div.second-pizza div.calc form div {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #141010;
+}
+body div.wrapper main div.first-pizza div.calc form div input,
+body div.wrapper main div.second-pizza div.calc form div input {
+  background-color: #ebe6e6;
+  border-color: #5C0502;
+  border-radius: 1rem;
+  padding: 0.7rem;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+body div.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 10%;
+}
+body div.btn button.check {
+  padding: 1rem 3rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  background-color: #95A367;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  border-radius: 1rem;
+  border: transparent 2px solid;
+  color: #e5e5e3;
+}
+body div.btn button.check:hover {
+  background-color: #e5e5e3;
+  border-color: #95A367;
+  color: #95A367;
 }
 body div.result {
   width: 100%;
   flex-basis: 15%;
 }
 body footer {
-  font-size: 3rem;
+  font-size: 1.5rem;
   text-align: center;
   color: #e5e5e3;
   padding: 1rem;

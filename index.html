@@ -4,30 +4,126 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;700&display=swap"
+            rel="stylesheet" />
         <link rel="stylesheet" href="css/main.css" />
         <title>Pizza Calculator</title>
     </head>
     <body>
-        <h1>Pizza Calculator</h1>
+        <header>
+            <div class="header-wrapper">
+                <div class="header-text">
+                    <h1>Pizza</h1>
+                    <h2>Calculator</h2>
+                </div>
+                <span><i class="fa-solid fa-pizza-slice"></i></span>
+            </div>
+        </header>
+
         <div class="wrapper">
             <main>
                 <div class="first-pizza">
-                    <div class="img"></div>
                     <div class="title">
-                        <p>First variant</p>
+                        <span><i class="fa-solid fa-pizza-slice"></i></span>
+                        <p>variant</p>
                     </div>
-                    <div class="calc"></div>
+                    <div class="calc">
+                        <form>
+                            <div class="quantity">
+                                <label for="first-quantity">Quantity:</label>
+                                <input
+                                    class="first-quantity"
+                                    type="number"
+                                    id="first-quantity"
+                                    name="first-quantity"
+                                    min="0"
+                                    max="100"
+                                    step="1"
+                                    value="1" />
+                            </div>
+                            <div class="diameter">
+                                <label for="first-diameter">Diameter:</label>
+                                <input
+                                    class="first-diameter"
+                                    type="number"
+                                    id="first-diameter"
+                                    name="first-diameter"
+                                    min="0"
+                                    max="1000"
+                                    step="1"
+                                    value="30" />
+                            </div>
+                            <div class="price">
+                                <label for="first-price">Price:</label>
+                                <input
+                                    class="first-price"
+                                    type="number"
+                                    id="first-price"
+                                    name="first-price"
+                                    min="0"
+                                    max="1000"
+                                    step=".01"
+                                    value="19.99" />
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <div class="second-pizza">
-                    <div class="img"></div>
                     <div class="title">
-                        <p>Second variant</p>
+                        <span><i class="fa-solid fa-pizza-slice"></i><i class="fa-solid fa-pizza-slice"></i></span>
+                        <p>variant</p>
                     </div>
-                    <div class="calc"></div>
+                    <div class="calc">
+                        <form>
+                            <div class="quantity">
+                                <label for="second-quantity">Quantity:</label>
+                                <input
+                                    class="second-quantity"
+                                    type="number"
+                                    id="second-quantity"
+                                    name="second-quantity"
+                                    min="0"
+                                    max="100"
+                                    step="1"
+                                    value="2" />
+                            </div>
+                            <div class="diameter">
+                                <label for="second-diameter">Diameter:</label>
+                                <input
+                                    class="second-diameter"
+                                    type="number"
+                                    id="second-diameter"
+                                    name="second-diameter"
+                                    min="0"
+                                    max="1000"
+                                    step="1"
+                                    value="30" />
+                            </div>
+                            <div class="price">
+                                <label for="second-price">Price:</label>
+                                <input
+                                    class="second-price"
+                                    type="number"
+                                    id="second-price"
+                                    name="second-price"
+                                    min="0"
+                                    max="1000"
+                                    step=".01"
+                                    value="19.99" />
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </main>
         </div>
+        <div class="btn">
+            <button class="check">Calculate</button>
+        </div>
         <div class="result"></div>
         <footer>Pizza Calculator &copy; 2023</footer>
+        <script src="https://kit.fontawesome.com/e27b5dbfe8.js" crossorigin="anonymous"></script>
     </body>
 </html>

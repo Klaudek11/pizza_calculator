@@ -5,11 +5,40 @@ body {
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    h1 {
-        text-transform: uppercase;
-        font-size: 8rem;
-        margin: 2rem;
-        padding: 0;
+    header {
+        background-image: url(../img/pexels-sean-m-166451.jpg);
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        box-shadow: 0px 2px 5px $black;
+        margin-bottom: 3rem;
+        div.header-wrapper {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: rgba(30, 30, 30, 0.45);
+            height: 100%;
+            margin: 0;
+            color: $white;
+            div.header-text {
+                display: flex;
+                flex-direction: column;
+                padding: 1rem;
+                letter-spacing: 4px;
+                margin: 0 2rem;
+                h1 {
+                    font-size: 3rem;
+                    margin: 0;
+                }
+                h2 {
+                    font-size: 2rem;
+                    margin: 0;
+                }
+            }
+            span {
+                font-size: 4.5rem;
+            }
+        }
     }
     div.wrapper {
         display: flex;
@@ -21,40 +50,88 @@ body {
         flex-grow: 1;
         main {
             display: flex;
-            align-items: center;
-            justify-content: space-around;
+            justify-content: center;
+            align-items: flex-start;
             width: 100%;
             height: 100%;
             div.first-pizza,
             div.second-pizza {
                 display: flex;
                 flex-direction: column;
-                flex-basis: 45%;
-                height: 100%;
-                background-color: $white;
-                border: $black 2px solid;
-                border-radius: 2rem;
+                flex-basis: 40%;
+                max-width: 50rem;
                 overflow: hidden;
-                div.img {
-                    flex-basis: 30%;
-                }
+                background-color: $white;
+                border: $main-color 0.3rem solid;
+                border-radius: 2rem;
+                margin: 2rem;
                 div.title {
                     @include center;
-                    background-color: $black;
+                    flex-direction: column;
+                    background-color: $main-color;
                     text-align: center;
+                    font-size: 3rem;
+                    color: $white;
+                    i {
+                        margin: 1rem 0.5rem 0 0.5rem;
+                    }
                     p {
-                        font-size: 4rem;
-                        text-transform: uppercase;
-                        color: $white;
                         width: 100%;
+                        margin: 1rem 0;
+                        text-transform: uppercase;
+                        font-weight: bold;
                     }
                 }
                 div.calc {
                     flex-grow: 1;
-                    background-color: red;
                     width: 100%;
+                    background-color: $second-color;
+                    form {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: space-evenly;
+                        height: 100%;
+                        div {
+                            display: flex;
+                            flex-direction: column;
+                            padding: 3rem;
+                            font-size: 1.6rem;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            color: $black;
+                            input {
+                                background-color: $background;
+                                border-color: $main-color;
+                                border-radius: 1rem;
+                                padding: 0.7rem;
+                                margin-top: 1rem;
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
                 }
             }
+        }
+    }
+    div.btn {
+        @include center;
+        flex-basis: 10%;
+        button.check {
+            padding: 1rem 3rem;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            background-color: $third-color;
+            font-weight: bold;
+            letter-spacing: .3rem;
+            border-radius: 1rem;
+            border: transparent 2px solid;
+            color: $white;
+        }
+        button.check:hover {
+            background-color: $white;
+            border-color: $third-color;
+            color: $third-color;
         }
     }
     div.result {
@@ -63,7 +140,7 @@ body {
     }
 
     footer {
-        font-size: 3rem;
+        font-size: 1.5rem;
         text-align: center;
         color: $white;
         padding: 1rem;
