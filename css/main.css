@@ -134,6 +134,28 @@ body div.wrapper main div.second-pizza div.calc form div input {
   padding: 0.7rem;
   margin-top: 1rem;
   font-size: 1.4rem;
+  text-align: center;
+}
+body div.wrapper main div.first-pizza div.calc form div input[type=number],
+body div.wrapper main div.second-pizza div.calc form div input[type=number] {
+  -webkit-appearance: textfield;
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+body div.wrapper main div.first-pizza div.calc form div input:focus,
+body div.wrapper main div.first-pizza div.calc form div select:focus,
+body div.wrapper main div.first-pizza div.calc form div textarea:focus,
+body div.wrapper main div.first-pizza div.calc form div button:focus,
+body div.wrapper main div.second-pizza div.calc form div input:focus,
+body div.wrapper main div.second-pizza div.calc form div select:focus,
+body div.wrapper main div.second-pizza div.calc form div textarea:focus,
+body div.wrapper main div.second-pizza div.calc form div button:focus {
+  outline: none;
+}
+body div.wrapper main div.first-pizza div.calc form div input:focus,
+body div.wrapper main div.second-pizza div.calc form div input:focus {
+  background-color: #5C0502;
+  color: #e5e5e3;
 }
 body div.btn {
   display: flex;
@@ -156,6 +178,10 @@ body div.btn button.check:hover {
   background-color: #e5e5e3;
   border-color: #95A367;
   color: #95A367;
+}
+body div.btn button.check:active {
+  background-color: #95A367;
+  color: #e5e5e3;
 }
 body div.result {
   width: 100%;

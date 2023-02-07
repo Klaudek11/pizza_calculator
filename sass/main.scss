@@ -107,6 +107,24 @@ body {
                                 padding: 0.7rem;
                                 margin-top: 1rem;
                                 font-size: 1.4rem;
+                                text-align: center;
+                            }
+                            input[type='number'] {
+                                -webkit-appearance: textfield;
+                                -moz-appearance: textfield;
+                                appearance: textfield;
+                            }
+
+                            input:focus,
+                            select:focus,
+                            textarea:focus,
+                            button:focus {
+                                outline: none;
+                            }
+
+                            input:focus {
+                                background-color: $main-color;
+                                color: $white;
                             }
                         }
                     }
@@ -123,7 +141,7 @@ body {
             text-transform: uppercase;
             background-color: $third-color;
             font-weight: bold;
-            letter-spacing: .3rem;
+            letter-spacing: 0.3rem;
             border-radius: 1rem;
             border: transparent 2px solid;
             color: $white;
@@ -132,6 +150,11 @@ body {
             background-color: $white;
             border-color: $third-color;
             color: $third-color;
+        }
+
+        button.check:active {
+            background-color: $third-color;
+            color: $white;
         }
     }
     div.result {
