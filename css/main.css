@@ -157,6 +157,22 @@ body div.wrapper main div.second-pizza div.calc form div input:focus {
   background-color: #5C0502;
   color: #e5e5e3;
 }
+body div.wrapper main div.first-pizza.win,
+body div.wrapper main div.second-pizza.win {
+  border-color: #95A367;
+}
+body div.wrapper main div.first-pizza.win div.title,
+body div.wrapper main div.second-pizza.win div.title {
+  background-color: #95A367;
+}
+body div.wrapper main div.first-pizza.lose,
+body div.wrapper main div.second-pizza.lose {
+  border-color: tomato;
+}
+body div.wrapper main div.first-pizza.lose div.title,
+body div.wrapper main div.second-pizza.lose div.title {
+  background-color: tomato;
+}
 body div.btn {
   display: flex;
   justify-content: center;

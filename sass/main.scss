@@ -130,6 +130,20 @@ body {
                     }
                 }
             }
+            div.first-pizza.win,
+            div.second-pizza.win {
+                border-color: $third-color;
+                div.title {
+                    background-color: $third-color;
+                }
+            }
+            div.first-pizza.lose,
+            div.second-pizza.lose {
+                border-color: tomato;
+                div.title {
+                    background-color: tomato;
+                }
+            }
         }
     }
     div.btn {
