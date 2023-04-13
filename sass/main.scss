@@ -2,6 +2,7 @@
 
 body {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
     align-items: center;
     height: 100vh;
@@ -27,27 +28,25 @@ body {
                 letter-spacing: 4px;
                 margin: 0 2rem;
                 h1 {
-                    font-size: 3rem;
+                    font-size: 2rem;
                     margin: 0;
                 }
                 h2 {
-                    font-size: 2rem;
+                    font-size: 1.5rem;
                     margin: 0;
                 }
             }
             span {
-                font-size: 4.5rem;
+                font-size: 3.5rem;
             }
         }
     }
     div.wrapper {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
         align-items: center;
         width: 100%;
         max-width: 1800px;
-        flex-grow: 1;
         main {
             display: flex;
             justify-content: center;
@@ -58,19 +57,19 @@ body {
             div.second-pizza {
                 display: flex;
                 flex-direction: column;
-                flex-basis: 40%;
+                width: 40%;
                 max-width: 50rem;
                 overflow: hidden;
                 background-color: $white;
                 border: $main-color 0.3rem solid;
                 border-radius: 2rem;
-                margin: 2rem;
+                margin: 1rem;
                 div.title {
                     @include center;
                     flex-direction: column;
                     background-color: $main-color;
                     text-align: center;
-                    font-size: 3rem;
+                    font-size: 2rem;
                     color: $white;
                     i {
                         margin: 1rem 0.5rem 0 0.5rem;
@@ -83,7 +82,6 @@ body {
                     }
                 }
                 div.calc {
-                    flex-grow: 1;
                     width: 100%;
                     background-color: $second-color;
                     form {
@@ -95,7 +93,7 @@ body {
                         div {
                             display: flex;
                             flex-direction: column;
-                            padding: 3rem;
+                            padding: 1rem 2rem;
                             font-size: 1.6rem;
                             text-transform: uppercase;
                             font-weight: bold;
@@ -146,12 +144,18 @@ body {
             }
         }
     }
+
+    div.result {
+        font-size: 1rem;
+        text-align: center;
+    }
+
     div.btn {
         @include center;
         flex-basis: 10%;
         button.check {
             padding: 1rem 3rem;
-            font-size: 2.5rem;
+            font-size: 1.5rem;
             text-transform: uppercase;
             background-color: $third-color;
             font-weight: bold;
@@ -171,17 +175,112 @@ body {
             color: $white;
         }
     }
-    div.result {
-        width: 100%;
-        flex-basis: 15%;
-    }
 
     footer {
-        font-size: 1.5rem;
+        font-size: 1rem;
         text-align: center;
         color: $white;
         padding: 1rem;
         width: 100%;
         background-color: $black;
+    }
+}
+
+@media (min-height: 800px) {
+    body {
+        header {
+            div.header-wrapper {
+                div.header-text {
+                    h1 {
+                        font-size: 3rem;
+                    }
+                    h2 {
+                        font-size: 2.5rem;
+                    }
+                }
+                span {
+                    font-size: 5.5rem;
+                }
+            }
+        }
+        div.wrapper {
+            main {
+                div.first-pizza,
+                div.second-pizza {
+                    div.title {
+                        font-size: 2.5rem;
+                        padding: 1rem;
+                    }
+                    div.calc {
+                        form {
+                            div {
+                                padding: 2rem 3rem;
+                                font-size: 2rem;
+                                input {
+                                    font-size: 1.4rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        div.result {
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        div.btn {
+            button.check {
+                font-size: 2.5rem;
+            }
+        }
+
+        footer {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    body {
+        div.wrapper {
+            main {
+                div.first-pizza,
+                div.second-pizza {
+                    div.title {
+                        font-size: 4rem;
+                        padding: 1rem 2rem;
+                    }
+                    div.calc {
+                        form {
+                            div {
+                                padding: 3rem 5rem;
+                                font-size: 2.5rem;
+                                input {
+                                    font-size: 2.4rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        div.result {
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        div.btn {
+            button.check {
+                font-size: 3.5rem;
+            }
+        }
+
+        footer {
+            font-size: 2rem;
+        }
     }
 }

@@ -13,6 +13,7 @@ body,
 
 body {
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   align-items: center;
   height: 100vh;
@@ -42,24 +43,22 @@ body header div.header-wrapper div.header-text {
   margin: 0 2rem;
 }
 body header div.header-wrapper div.header-text h1 {
-  font-size: 3rem;
-  margin: 0;
-}
-body header div.header-wrapper div.header-text h2 {
   font-size: 2rem;
   margin: 0;
 }
+body header div.header-wrapper div.header-text h2 {
+  font-size: 1.5rem;
+  margin: 0;
+}
 body header div.header-wrapper span {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
 }
 body div.wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
   width: 100%;
   max-width: 1800px;
-  flex-grow: 1;
 }
 body div.wrapper main {
   display: flex;
@@ -72,13 +71,13 @@ body div.wrapper main div.first-pizza,
 body div.wrapper main div.second-pizza {
   display: flex;
   flex-direction: column;
-  flex-basis: 40%;
+  width: 40%;
   max-width: 50rem;
   overflow: hidden;
   background-color: #e5e5e3;
   border: #5C0502 0.3rem solid;
   border-radius: 2rem;
-  margin: 2rem;
+  margin: 1rem;
 }
 body div.wrapper main div.first-pizza div.title,
 body div.wrapper main div.second-pizza div.title {
@@ -88,7 +87,7 @@ body div.wrapper main div.second-pizza div.title {
   flex-direction: column;
   background-color: #5C0502;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
   color: #e5e5e3;
 }
 body div.wrapper main div.first-pizza div.title i,
@@ -104,7 +103,6 @@ body div.wrapper main div.second-pizza div.title p {
 }
 body div.wrapper main div.first-pizza div.calc,
 body div.wrapper main div.second-pizza div.calc {
-  flex-grow: 1;
   width: 100%;
   background-color: #E5D2C3;
 }
@@ -120,7 +118,7 @@ body div.wrapper main div.first-pizza div.calc form div,
 body div.wrapper main div.second-pizza div.calc form div {
   display: flex;
   flex-direction: column;
-  padding: 3rem;
+  padding: 1rem 2rem;
   font-size: 1.6rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -173,6 +171,10 @@ body div.wrapper main div.first-pizza.lose div.title,
 body div.wrapper main div.second-pizza.lose div.title {
   background-color: tomato;
 }
+body div.result {
+  font-size: 1rem;
+  text-align: center;
+}
 body div.btn {
   display: flex;
   justify-content: center;
@@ -181,7 +183,7 @@ body div.btn {
 }
 body div.btn button.check {
   padding: 1rem 3rem;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   background-color: #95A367;
   font-weight: bold;
@@ -199,15 +201,73 @@ body div.btn button.check:active {
   background-color: #95A367;
   color: #e5e5e3;
 }
-body div.result {
-  width: 100%;
-  flex-basis: 15%;
-}
 body footer {
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-align: center;
   color: #e5e5e3;
   padding: 1rem;
   width: 100%;
   background-color: #141010;
+}
+
+@media (min-height: 800px) {
+  body header div.header-wrapper div.header-text h1 {
+    font-size: 3rem;
+  }
+  body header div.header-wrapper div.header-text h2 {
+    font-size: 2.5rem;
+  }
+  body header div.header-wrapper span {
+    font-size: 5.5rem;
+  }
+  body div.wrapper main div.first-pizza div.title,
+  body div.wrapper main div.second-pizza div.title {
+    font-size: 2.5rem;
+    padding: 1rem;
+  }
+  body div.wrapper main div.first-pizza div.calc form div,
+  body div.wrapper main div.second-pizza div.calc form div {
+    padding: 2rem 3rem;
+    font-size: 2rem;
+  }
+  body div.wrapper main div.first-pizza div.calc form div input,
+  body div.wrapper main div.second-pizza div.calc form div input {
+    font-size: 1.4rem;
+  }
+  body div.result {
+    font-size: 2rem;
+    text-align: center;
+  }
+  body div.btn button.check {
+    font-size: 2.5rem;
+  }
+  body footer {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 768px) {
+  body div.wrapper main div.first-pizza div.title,
+  body div.wrapper main div.second-pizza div.title {
+    font-size: 4rem;
+    padding: 1rem 2rem;
+  }
+  body div.wrapper main div.first-pizza div.calc form div,
+  body div.wrapper main div.second-pizza div.calc form div {
+    padding: 3rem 5rem;
+    font-size: 2.5rem;
+  }
+  body div.wrapper main div.first-pizza div.calc form div input,
+  body div.wrapper main div.second-pizza div.calc form div input {
+    font-size: 2.4rem;
+  }
+  body div.result {
+    font-size: 3rem;
+    text-align: center;
+  }
+  body div.btn button.check {
+    font-size: 3.5rem;
+  }
+  body footer {
+    font-size: 2rem;
+  }
 }/*# sourceMappingURL=main.css.map */
