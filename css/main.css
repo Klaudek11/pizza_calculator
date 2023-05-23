@@ -245,7 +245,7 @@ body footer {
     font-size: 2rem;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 768px) and (orientation: portrait) {
   body div.wrapper main div.first-pizza div.title,
   body div.wrapper main div.second-pizza div.title {
     font-size: 4rem;
@@ -266,6 +266,54 @@ body footer {
   }
   body div.btn button.check {
     font-size: 3.5rem;
+  }
+  body footer {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  body div.wrapper main div.first-pizza div.title,
+  body div.wrapper main div.second-pizza div.title {
+    font-size: 2rem;
+  }
+  body div.wrapper main div.first-pizza div.calc form div,
+  body div.wrapper main div.second-pizza div.calc form div {
+    padding: 1.5rem 4rem;
+    font-size: 2rem;
+  }
+  body div.wrapper main div.first-pizza div.calc form div input,
+  body div.wrapper main div.second-pizza div.calc form div input {
+    font-size: 2rem;
+  }
+  body div.result {
+    font-size: 1.6rem;
+  }
+  body div.btn button.check {
+    font-size: 2rem;
+  }
+  body footer {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1440px) {
+  body div.wrapper main div.first-pizza div.title,
+  body div.wrapper main div.second-pizza div.title {
+    font-size: 4rem;
+  }
+  body div.wrapper main div.first-pizza div.calc form div,
+  body div.wrapper main div.second-pizza div.calc form div {
+    padding: 2rem;
+    font-size: 3.5rem;
+  }
+  body div.wrapper main div.first-pizza div.calc form div input,
+  body div.wrapper main div.second-pizza div.calc form div input {
+    font-size: 3.5rem;
+  }
+  body div.result {
+    font-size: 3rem;
+  }
+  body div.btn button.check {
+    font-size: 4rem;
   }
   body footer {
     font-size: 2rem;
